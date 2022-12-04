@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import DangerousHTML from 'dangerous-html/react'
 import PropTypes from 'prop-types'
@@ -12,27 +13,12 @@ const Navbar = (props) => {
           src={props.BrandingLogo}
           className="navbar-branding-logo"
         />
-        <div className="navbar-nav-content">
-          <div className="navbar-nav-links">
-            <span className="navbar-link nav-link">HOME</span>
-            <span className="navbar-link1 nav-link">MENU</span>
-            <span className="navbar-link2 nav-link">ABOUT</span>
-            <span className="navbar-link3 nav-link">Contact</span>
-          </div>
-          <div id="open-mobile-menu" className="navbar-hamburger get-started">
-            <img
-              alt={props.image_alt}
-              src={props.image_src}
-              className="navbar-image"
-            />
-          </div>
-        </div>
         <div id="mobile-menu" className="navbar-mobile-menu">
           <div className="navbar-branding">
             <img
               alt={props.image_alt1}
               src={props.image_src1}
-              className="navbar-image1"
+              className="navbar-image"
             />
             <div id="close-mobile-menu" className="navbar-container">
               <svg viewBox="0 0 1024 1024" className="navbar-icon">
@@ -40,7 +26,7 @@ const Navbar = (props) => {
               </svg>
             </div>
           </div>
-          <div className="navbar-nav-links1">
+          <div className="navbar-nav-links">
             <span className="nav-link">Features</span>
             <span className="nav-link">Why us</span>
             <span className="nav-link">Prices</span>
@@ -48,6 +34,22 @@ const Navbar = (props) => {
           </div>
           <div className="get-started">
             <span className="navbar-text">Get started</span>
+          </div>
+        </div>
+        <div className="navbar-nav-content">
+          <div className="navbar-nav-links1">
+            <Link href="/">
+              <a className="navbar-link05 nav-link">HOME</a>
+            </Link>
+            <Link href="/menu" id="MENU">
+              <a className="navbar-link07 nav-link">MENU</a>
+            </Link>
+            <Link href="/about">
+              <a className="navbar-link09 nav-link">ABOUT</a>
+            </Link>
+            <Link href="/contact">
+              <a className="navbar-link11 nav-link">Contact</a>
+            </Link>
           </div>
         </div>
         <div>
@@ -118,39 +120,6 @@ listenForUrlChangesMobileMenu()
             height: 77px;
             box-sizing: content-box;
           }
-          .navbar-nav-content {
-            gap: var(--dl-space-space-threeunits);
-            display: flex;
-            align-items: center;
-            margin-left: auto;
-            flex-direction: row;
-            justify-content: flex-start;
-          }
-          .navbar-nav-links {
-            gap: var(--dl-space-space-threeunits);
-            display: flex;
-            border-color: transparent;
-          }
-          .navbar-link {
-            color: black;
-            text-decoration: none;
-          }
-          .navbar-link1 {
-            color: black;
-          }
-          .navbar-link2 {
-            color: black;
-          }
-          .navbar-link3 {
-            color: black;
-          }
-          .navbar-hamburger {
-            display: none;
-          }
-          .navbar-image {
-            width: 100px;
-            object-fit: cover;
-          }
           .navbar-mobile-menu {
             gap: var(--dl-space-space-twounits);
             top: 0;
@@ -173,7 +142,7 @@ listenForUrlChangesMobileMenu()
             flex-direction: row;
             justify-content: space-between;
           }
-          .navbar-image1 {
+          .navbar-image {
             width: 100px;
             filter: brightness(0) saturate(100%);
             object-fit: cover;
@@ -188,7 +157,7 @@ listenForUrlChangesMobileMenu()
             width: 24px;
             height: 24px;
           }
-          .navbar-nav-links1 {
+          .navbar-nav-links {
             gap: var(--dl-space-space-unit);
             color: var(--dl-color-gray-black);
             display: flex;
@@ -204,34 +173,86 @@ listenForUrlChangesMobileMenu()
             font-stretch: normal;
             text-decoration: none;
           }
-
+          .navbar-nav-content {
+            gap: var(--dl-space-space-threeunits);
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            flex-direction: row;
+            justify-content: flex-start;
+          }
+          .navbar-nav-links1 {
+            gap: var(--dl-space-space-threeunits);
+            display: flex;
+            border-color: transparent;
+          }
+          .navbar-link05 {
+            color: black;
+            text-decoration: none;
+          }
+          .navbar-link07 {
+            color: black;
+            text-decoration: none;
+          }
+          .navbar-link09 {
+            color: black;
+            text-decoration: none;
+          }
+          .navbar-link11 {
+            color: black;
+            text-decoration: none;
+          }
+          .navbar-root-class-name {
+            width: 100%;
+          }
           @media (max-width: 767px) {
             .navbar-navbar {
               padding-bottom: var(--dl-space-space-fourunits);
             }
             .navbar-branding-logo {
-              width: 80px;
-            }
-            .navbar-nav-links {
-              display: flex;
-            }
-            .navbar-hamburger {
-              display: flex;
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
-            }
-            .navbar-image {
-              width: 16px;
-              height: 14px;
+              left: -1px;
+              width: 73px;
+              bottom: 7px;
+              height: 65px;
+              position: absolute;
             }
             .navbar-branding {
               width: 100%;
             }
-            .navbar-nav-links1 {
+            .navbar-nav-links {
               margin-top: var(--dl-space-space-twounits);
               align-items: flex-start;
               margin-bottom: var(--dl-space-space-twounits);
               justify-content: center;
+            }
+            .navbar-nav-content {
+              position: relative;
+            }
+            .navbar-nav-links1 {
+              left: -436px;
+              bottom: -45px;
+              display: flex;
+              position: absolute;
+            }
+          }
+          @media (max-width: 479px) {
+            .navbar-navbar {
+              padding-bottom: 6px;
+            }
+            .navbar-branding-logo {
+              top: 17px;
+              left: 5px;
+              width: 77px;
+              height: 52px;
+            }
+            .navbar-nav-content {
+              height: 55px;
+            }
+            .navbar-nav-links1 {
+              left: -368px;
+              width: 359px;
+              bottom: -5px;
+              height: 38px;
             }
           }
         `}
@@ -241,18 +262,14 @@ listenForUrlChangesMobileMenu()
 }
 
 Navbar.defaultProps = {
-  image_alt: 'image',
   image_src1: '/playground_assets/planical7012-ttpb.svg',
-  image_src: '/playground_assets/hamburger-200h.png',
   image_alt1: 'image',
   rootClassName: '',
   BrandingLogo: '/playground_assets/catering-removebg-preview-2-200h.png',
 }
 
 Navbar.propTypes = {
-  image_alt: PropTypes.string,
   image_src1: PropTypes.string,
-  image_src: PropTypes.string,
   image_alt1: PropTypes.string,
   rootClassName: PropTypes.string,
   BrandingLogo: PropTypes.string,

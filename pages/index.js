@@ -19,91 +19,63 @@ const Home = (props) => {
           src="/playground_assets/photogaphy%20workshop-1500w.png"
           className="home-image"
         />
-        <section className="home-section">
-          <img
-            alt="image"
-            src="/playground_assets/completion%20%5B1%5D-1500w.png"
-            className="home-image1"
-          />
-        </section>
-        <section className="home-section1">
-          <a
-            href="https://psbrotherscafe.com/menu"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="home-link"
-          >
-            <img
-              alt="image"
-              src="/playground_assets/e2ab8e8271eec239db1f0c94f72d31a9%20%5B3%5D-900h.png"
-              className="home-image2"
-            />
-          </a>
-        </section>
+        <img
+          alt="image"
+          src="/playground_assets/completion%20%5B1%5D-1500w.png"
+          className="home-image1"
+        />
+        <img
+          alt="image"
+          src="/playground_assets/e2ab8e8271eec239db1f0c94f72d31a9%20%5B3%5D-1500w.png"
+          className="home-image2"
+        />
         <footer className="home-footer">
-          <div className="home-content">
-            <main className="home-main-content">
-              <div className="home-content1">
-                <header className="home-categories">
-                  <div className="home-category">
-                    <div className="home-header"></div>
-                    <div className="home-links">
-                      <span className="footer-link">Contact</span>
-                      <span className="footer-link">Info@freshy.com</span>
-                      <span className="footer-link">Contact@freshy.com</span>
-                    </div>
-                    <div className="home-links1">
-                      <span className="footer-link">LOCATION</span>
-                      <span className="footer-link">
-                        <span>
-                          St. Downtown,
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
-                        <br></br>
-                        <span>Ottawa, Canada</span>
-                      </span>
-                    </div>
-                    <div className="home-links2">
-                      <span className="home-text08 footer-link">
-                        <span>
-                          Website by PSBROTHERS
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
-                        </span>
-                        <br></br>
-                        <span>©2022. All Rights Reserved</span>
-                      </span>
-                      <span className="home-text12 footer-link">
-                        <span>LEGAL</span>
-                        <br></br>
-                        <br></br>
-                      </span>
-                    </div>
-                  </div>
-                </header>
+          <div className="home-container1">
+            <div className="home-logo">
+              <img
+                alt="logo"
+                src="/playground_assets/catering-removebg-preview-2-1500h.png"
+                className="home-image3"
+              />
+            </div>
+            <div className="home-links-container">
+              <div className="home-container2">
+                <div className="home-product-container">
+                  <span className="home-text">
+                    <br></br>
+                    <span>Contact</span>
+                    <br></br>
+                  </span>
+                  <span className="home-text04">Info@freshy.com</span>
+                  <span className="home-text05">
+                    <br></br>
+                    <span>Contact@freshy.com</span>
+                  </span>
+                </div>
+                <div className="home-product-container1">
+                  <span className="home-text08">LEGAL</span>
+                  <span className="home-text09">
+                    <span>Website by PSBROTHERS</span>
+                    <br></br>
+                    <span>©2023. All Rights Reserved</span>
+                  </span>
+                </div>
+                <div className="home-company-container">
+                  <span className="home-text13">LOCATION</span>
+                  <span className="home-text14">
+                    <span>St. Downtown,</span>
+                    <br></br>
+                    <span>Ottawa, Canada</span>
+                  </span>
+                </div>
               </div>
-              <section className="home-copyright">
-                <span className="home-text16">
-                  © 2022 PSBROTHERSCAFE. All Rights Reserved.
-                </span>
-              </section>
-            </main>
-            <main className="home-subscribe">
-              <main className="home-main"></main>
-            </main>
-            <section className="home-copyright1">
-              <span className="home-text17">
-                © 2022 latitude. All Rights Reserved.
-              </span>
-            </section>
+              <div className="home-container3"></div>
+            </div>
           </div>
+          <div className="home-separator"></div>
+          <span className="home-text18">
+            © 2023 PSBROTHERS, All Rights Reserved.
+          </span>
         </footer>
         <div>
           <DangerousHTML
@@ -194,236 +166,279 @@ Here's what the above is doing:
           .home-image {
             width: 100%;
             height: 933px;
-            object-fit: cover;
-          }
-          .home-section {
-            gap: var(--dl-space-space-fiveunits);
-            width: 100%;
-            height: 973px;
             display: flex;
-            position: relative;
-            align-items: flex-start;
-            padding-left: var(--dl-space-space-oneandhalfunits);
-            padding-right: var(--dl-space-space-oneandhalfunits);
-            flex-direction: column;
-            padding-bottom: 994px;
-            justify-content: flex-start;
+            object-fit: cover;
           }
           .home-image1 {
             width: 100%;
-            height: 971px;
-            align-self: flex-end;
+            height: 933px;
             object-fit: cover;
-          }
-          .home-section1 {
-            gap: var(--dl-space-space-fiveunits);
-            width: 100%;
-            height: 815px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-unit);
-            justify-content: center;
-          }
-          .home-link {
-            display: contents;
           }
           .home-image2 {
             width: 100%;
-            height: 868px;
-            align-self: flex-end;
+            height: 791px;
             object-fit: cover;
-            text-decoration: none;
           }
           .home-footer {
-            gap: var(--dl-space-space-fiveunits);
             width: 100%;
-            height: 241px;
             display: flex;
+            max-width: var(--dl-size-size-maxwidth);
             align-items: center;
+            padding-top: var(--dl-space-space-twounits);
+            padding-left: var(--dl-space-space-threeunits);
+            padding-right: var(--dl-space-space-threeunits);
             flex-direction: column;
-            justify-content: center;
+            padding-bottom: var(--dl-space-space-twounits);
+            justify-content: space-between;
           }
-          .home-content {
+          .home-container1 {
             width: 100%;
             display: flex;
-            max-width: 1200px;
             align-items: flex-start;
             flex-direction: row;
             justify-content: space-between;
           }
-          .home-main-content {
-            gap: var(--dl-space-space-fiveunits);
-            width: 1318px;
-            height: 292px;
+          .home-logo {
             display: flex;
-            position: relative;
+            max-width: var(--dl-size-size-maxwidth);
             align-items: flex-start;
             flex-direction: column;
-            justify-content: flex-start;
           }
-          .home-content1 {
-            width: 816px;
+          .home-image3 {
+            height: 2rem;
+          }
+          .home-links-container {
             display: flex;
-            position: relative;
             align-items: flex-start;
             flex-direction: row;
-            justify-content: flex-start;
+            justify-content: space-between;
           }
-          .home-categories {
-            gap: var(--dl-space-space-fourunits);
-            top: 0px;
-            left: 0px;
-            width: 829px;
-            height: 184px;
+          .home-container2 {
+            width: 813px;
             display: flex;
-            position: absolute;
             align-items: flex-start;
+            margin-right: 10rem;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
           }
-          .home-category {
-            gap: var(--dl-space-space-unit);
+          .home-product-container {
+            width: 184px;
+            height: 163px;
             display: flex;
             position: relative;
             align-items: flex-start;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .home-header {
-            gap: var(--dl-space-space-unit);
-            border: 2px dashed rgba(120, 120, 120, 0.4);
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .home-links {
-            gap: var(--dl-space-space-unit);
-            top: 57px;
-            left: -434px;
-            width: 234px;
-            height: 163px;
-            display: flex;
-            position: absolute;
-            align-items: flex-start;
+            margin-right: 10rem;
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-links1 {
-            gap: var(--dl-space-space-unit);
-            top: 65px;
-            right: -421px;
-            width: 234px;
-            height: 163px;
-            display: flex;
-            position: absolute;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: flex-start;
+          .home-text {
+            font-weight: 700;
+            margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .home-links2 {
-            gap: var(--dl-space-space-unit);
-            left: -2px;
-            width: 183px;
-            bottom: -67px;
-            display: flex;
+          .home-text04 {
+            margin-bottom: var(--dl-space-space-unit);
+          }
+          .home-text05 {
+            top: 75px;
+            left: -3px;
             position: absolute;
+          }
+          .home-product-container1 {
+            width: 228px;
+            display: flex;
             align-items: flex-start;
+            margin-right: 10rem;
             flex-direction: column;
             justify-content: flex-start;
           }
           .home-text08 {
-            top: 33px;
-            left: -123px;
-            position: absolute;
+            font-weight: 700;
+            margin-bottom: var(--dl-space-space-oneandhalfunits);
           }
-          .home-text12 {
-            top: -7px;
-            left: -126px;
-            position: absolute;
+          .home-text09 {
+            margin-bottom: var(--dl-space-space-unit);
           }
-          .home-copyright {
-            gap: var(--dl-space-space-fiveunits);
-            left: 0px;
-            width: 100%;
-            bottom: 28px;
-            height: 17px;
+          .home-company-container {
+            width: 116px;
             display: flex;
-            position: absolute;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: flex-end;
-          }
-          .home-text16 {
-            color: #b1b1b1;
-            width: 100%;
-            font-size: 14px;
-            align-self: flex-end;
-            font-family: Poppins;
-            line-height: 21px;
-          }
-          .home-subscribe {
-            gap: var(--dl-space-space-unit);
-            height: 100%;
-            display: flex;
+            position: relative;
             align-items: flex-start;
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-main {
-            gap: var(--dl-space-space-oneandhalfunits);
+          .home-text13 {
+            font-weight: 700;
+            margin-bottom: var(--dl-space-space-oneandhalfunits);
+          }
+          .home-text14 {
+            right: -14px;
+            bottom: -33px;
+            position: absolute;
+            font-weight: 300;
+          }
+          .home-container3 {
             border: 2px dashed rgba(120, 120, 120, 0.4);
             display: flex;
             align-items: flex-start;
             flex-direction: column;
             justify-content: flex-start;
           }
-          .home-copyright1 {
-            gap: var(--dl-space-space-fiveunits);
-            flex: 1;
+          .home-separator {
             width: 100%;
-            display: none;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
+            height: 1px;
+            margin-top: var(--dl-space-space-twounits);
+            margin-bottom: var(--dl-space-space-twounits);
+            background-color: var(--dl-color-gray-900);
           }
-          .home-text17 {
-            color: #c4c4c4;
-            width: 100%;
-            font-size: 14px;
-            font-family: Poppins;
-            line-height: 21px;
+          .home-text18 {
+            align-self: center;
           }
           @media (max-width: 991px) {
-            .home-section1 {
-              gap: var(--dl-space-space-oneandhalfunits);
+            .home-image {
+              width: 100%;
+              height: 760px;
             }
-            .home-content {
-              gap: var(--dl-space-space-threeunits);
-              align-items: flex-start;
+            .home-image1 {
+              width: 100%;
+              height: 842px;
+            }
+            .home-image2 {
+              width: 100%;
+              height: 629px;
+            }
+            .home-footer {
               flex-direction: column;
-              justify-content: flex-start;
             }
-            .home-copyright {
-              display: none;
+            .home-logo {
+              position: relative;
             }
-            .home-copyright1 {
-              display: flex;
+            .home-image3 {
+              right: -474px;
+              bottom: -175px;
+              position: absolute;
+            }
+            .home-container2 {
+              margin-right: var(--dl-space-space-fourunits);
+            }
+            .home-product-container {
+              margin-right: var(--dl-space-space-fourunits);
+            }
+            .home-product-container1 {
+              margin-right: var(--dl-space-space-fourunits);
             }
           }
           @media (max-width: 767px) {
-            .home-section1 {
-              padding-top: var(--dl-space-space-fourunits);
-              padding-bottom: var(--dl-space-space-fourunits);
+            .home-image {
+              width: 100%;
+              height: 507px;
             }
-            .home-content1 {
-              gap: var(--dl-space-space-threeunits);
+            .home-image1 {
+              width: 100%;
+              height: 533px;
+            }
+            .home-image2 {
+              width: 100%;
+              height: 393px;
+            }
+            .home-footer {
+              height: 356px;
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
+            }
+            .home-container1 {
+              height: 259px;
+              align-items: center;
+              flex-direction: column;
+              justify-content: space-between;
+            }
+            .home-logo {
+              align-items: center;
+            }
+            .home-image3 {
+              margin-bottom: var(--dl-space-space-oneandhalfunits);
+            }
+            .home-links-container {
+              width: 100%;
+              align-items: flex-start;
+              flex-direction: row;
+              justify-content: center;
+            }
+            .home-container2 {
+              margin-right: var(--dl-space-space-fourunits);
+            }
+            .home-product-container {
+              margin-right: var(--dl-space-space-fourunits);
+            }
+            .home-product-container1 {
+              margin-right: var(--dl-space-space-fourunits);
+            }
+          }
+          @media (max-width: 479px) {
+            .home-image {
+              width: 100%;
+              height: 366px;
+            }
+            .home-image1 {
+              width: 100%;
+              height: 366px;
+            }
+            .home-image2 {
+              width: 100%;
+              height: 366px;
+            }
+            .home-footer {
+              width: 100%;
+              height: 349px;
+              padding: var(--dl-space-space-unit);
+              margin-bottom: 0px;
+              padding-bottom: 5px;
+            }
+            .home-container1 {
+              align-items: center;
               flex-direction: column;
             }
-            .home-categories {
-              gap: var(--dl-space-space-twounits);
+            .home-image3 {
+              margin-bottom: 0px;
+            }
+            .home-links-container {
+              width: 479px;
+              position: relative;
+              align-items: center;
               flex-direction: column;
+            }
+            .home-container2 {
+              top: 0px;
+              left: 9px;
+              width: 462px;
+              position: relative;
+              margin-right: 0px;
+            }
+            .home-text {
+              font-weight: 700;
+            }
+            .home-product-container1 {
+              top: 19px;
+              left: 186px;
+              width: 134px;
+              height: 132px;
+              position: absolute;
+            }
+            .home-text13 {
+              left: -12px;
+              bottom: -62px;
+              position: absolute;
+            }
+            .home-text14 {
+              left: -13px;
+              bottom: -100px;
+            }
+            .home-container3 {
+              margin-top: var(--dl-space-space-oneandhalfunits);
+              align-items: flex-start;
+              margin-bottom: 0px;
+            }
+            .home-text18 {
+              text-align: center;
             }
           }
         `}
