@@ -16,7 +16,7 @@ const Home = (props) => {
         <Navbar rootClassName="navbar-root-class-name"></Navbar>
         <img
           alt="image"
-          src="/playground_assets/photogaphy%20workshop-400h.png"
+          src="/playground_assets/photogaphy%20workshop-1500w.png"
           className="home-image"
         />
         <img
@@ -165,15 +165,16 @@ Here's what the above is doing:
           }
           .home-image {
             width: 100%;
-            height: 933px;
+            height: 827px;
             display: flex;
-            max-width: 479px;
-            max-height: 400px;
+            align-self: center;
+            min-height: auto;
             object-fit: cover;
           }
           .home-image1 {
             width: 100%;
             height: 933px;
+            display: flex;
             object-fit: cover;
           }
           .home-image2 {
@@ -303,6 +304,7 @@ Here's what the above is doing:
             .home-image1 {
               width: 100%;
               height: 842px;
+              display: flex;
             }
             .home-image2 {
               width: 100%;
