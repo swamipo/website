@@ -29,54 +29,6 @@ const Home = (props) => {
           src="/playground_assets/e2ab8e8271eec239db1f0c94f72d31a9%20%5B3%5D-1500w.png"
           className="home-image2"
         />
-        <footer className="home-footer">
-          <div className="home-container1">
-            <div className="home-logo">
-              <img
-                alt="logo"
-                src="/playground_assets/catering-removebg-preview-2-1500h.png"
-                className="home-image3"
-              />
-            </div>
-            <div className="home-links-container">
-              <div className="home-container2">
-                <div className="home-product-container">
-                  <span className="home-text">
-                    <br></br>
-                    <span>Contact</span>
-                    <br></br>
-                  </span>
-                  <span className="home-text04">Info@freshy.com</span>
-                  <span className="home-text05">
-                    <br></br>
-                    <span>Contact@freshy.com</span>
-                  </span>
-                </div>
-                <div className="home-product-container1">
-                  <span className="home-text08">LEGAL</span>
-                  <span className="home-text09">
-                    <span>Website by PSBROTHERS</span>
-                    <br></br>
-                    <span>©2023. All Rights Reserved</span>
-                  </span>
-                </div>
-                <div className="home-company-container">
-                  <span className="home-text13">LOCATION</span>
-                  <span className="home-text14">
-                    <span>St. Downtown,</span>
-                    <br></br>
-                    <span>Ottawa, Canada</span>
-                  </span>
-                </div>
-              </div>
-              <div className="home-container3"></div>
-            </div>
-          </div>
-          <div className="home-separator"></div>
-          <span className="home-text18">
-            © 2023 PSBROTHERS, All Rights Reserved.
-          </span>
-        </footer>
         <div>
           <DangerousHTML
             html={`<script>
@@ -151,6 +103,17 @@ Here's what the above is doing:
 </script>`}
           ></DangerousHTML>
         </div>
+        <footer className="home-footer">
+          <img
+            alt="logo"
+            src="/playground_assets/catering-removebg-preview-2-1500h.png"
+            className="home-image3"
+          />
+          <span className="home-text">
+            Website by PSBROTHERS©2023. All Rights Reserved
+          </span>
+          <div className="home-icon-group"></div>
+        </footer>
       </div>
       <style jsx>
         {`
@@ -188,113 +151,18 @@ Here's what the above is doing:
             max-width: var(--dl-size-size-maxwidth);
             align-items: center;
             padding-top: var(--dl-space-space-twounits);
-            padding-left: var(--dl-space-space-threeunits);
-            padding-right: var(--dl-space-space-threeunits);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-twounits);
             justify-content: space-between;
-          }
-          .home-container1 {
-            width: 100%;
-            display: flex;
-            align-items: flex-start;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .home-logo {
-            display: flex;
-            max-width: var(--dl-size-size-maxwidth);
-            align-items: flex-start;
-            flex-direction: column;
           }
           .home-image3 {
             height: 2rem;
+            object-fit: cover;
           }
-          .home-links-container {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .home-container2 {
-            width: 813px;
-            display: flex;
-            align-items: flex-start;
-            margin-right: 10rem;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .home-product-container {
-            width: 184px;
-            height: 163px;
-            display: flex;
-            position: relative;
-            align-items: flex-start;
-            margin-right: 10rem;
-            flex-direction: column;
-            justify-content: flex-start;
-          }
-          .home-text {
-            font-weight: 700;
-            margin-bottom: var(--dl-space-space-oneandhalfunits);
-          }
-          .home-text04 {
-            margin-bottom: var(--dl-space-space-unit);
-          }
-          .home-text05 {
-            top: 75px;
-            left: -3px;
-            position: absolute;
-          }
-          .home-product-container1 {
-            width: 228px;
-            display: flex;
-            align-items: center;
-            margin-right: 10rem;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .home-text08 {
-            font-weight: 700;
-            margin-bottom: var(--dl-space-space-oneandhalfunits);
-          }
-          .home-text09 {
-            margin-bottom: var(--dl-space-space-unit);
-          }
-          .home-company-container {
-            width: 116px;
-            display: flex;
-            position: relative;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: flex-start;
-          }
-          .home-text13 {
-            font-weight: 700;
-            margin-bottom: var(--dl-space-space-oneandhalfunits);
-          }
-          .home-text14 {
-            right: -14px;
-            bottom: -33px;
-            position: absolute;
-            font-weight: 300;
-          }
-          .home-container3 {
+          .home-icon-group {
             border: 2px dashed rgba(120, 120, 120, 0.4);
             display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            justify-content: flex-start;
-          }
-          .home-separator {
-            width: 100%;
-            height: 1px;
-            margin-top: var(--dl-space-space-twounits);
-            margin-bottom: var(--dl-space-space-twounits);
-            background-color: var(--dl-color-gray-900);
-          }
-          .home-text18 {
-            align-self: center;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
           }
           @media (max-width: 991px) {
             .home-image {
@@ -309,18 +177,6 @@ Here's what the above is doing:
             .home-image2 {
               width: 100%;
               height: 629px;
-            }
-            .home-footer {
-              flex-direction: column;
-            }
-            .home-container2 {
-              margin-right: var(--dl-space-space-fourunits);
-            }
-            .home-product-container {
-              margin-right: var(--dl-space-space-fourunits);
-            }
-            .home-product-container1 {
-              margin-right: var(--dl-space-space-fourunits);
             }
           }
           @media (max-width: 767px) {
@@ -337,35 +193,14 @@ Here's what the above is doing:
               height: 393px;
             }
             .home-footer {
-              height: 356px;
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .home-container1 {
-              align-items: center;
-              flex-direction: column;
-              justify-content: space-between;
-            }
-            .home-logo {
-              align-items: center;
-            }
-            .home-image3 {
-              margin-bottom: var(--dl-space-space-oneandhalfunits);
-            }
-            .home-links-container {
-              width: 100%;
-              align-items: flex-start;
-              flex-direction: row;
-              justify-content: center;
-            }
-            .home-container2 {
-              margin-right: var(--dl-space-space-fourunits);
-            }
-            .home-product-container {
-              margin-right: var(--dl-space-space-fourunits);
-            }
-            .home-product-container1 {
-              margin-right: var(--dl-space-space-fourunits);
+            .home-text {
+              font-size: 13px;
+              text-align: center;
+              margin-left: var(--dl-space-space-unit);
+              margin-right: var(--dl-space-space-unit);
             }
           }
           @media (max-width: 479px) {
@@ -379,68 +214,25 @@ Here's what the above is doing:
             }
             .home-image2 {
               width: 100%;
-              height: 207px;
+              height: 213px;
+              padding-left: 0px;
             }
             .home-footer {
-              height: 346px;
+              height: 205px;
               padding: var(--dl-space-space-unit);
-              margin-bottom: 0px;
-              padding-bottom: 5px;
-            }
-            .home-container1 {
-              align-items: center;
+              padding-top: var(--dl-space-space-unit);
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
               flex-direction: column;
+              padding-bottom: 51px;
             }
             .home-image3 {
-              width: 39px;
-              height: 25px;
-              margin-bottom: 0px;
+              margin-bottom: var(--dl-space-space-unit);
             }
-            .home-links-container {
-              width: 479px;
-              height: 173px;
-              align-items: center;
-              flex-direction: column;
-            }
-            .home-container2 {
-              width: 287px;
-              height: 183px;
+            .home-text {
+              margin-left: 0px;
               margin-right: 0px;
-            }
-            .home-product-container1 {
-              width: 178px;
-              height: 125px;
-              position: relative;
-            }
-            .home-text08 {
-              left: 20px;
-              bottom: 63px;
-              position: absolute;
-            }
-            .home-text09 {
-              left: -4px;
-              bottom: -46px;
-              position: absolute;
-            }
-            .home-text13 {
-              top: 1px;
-              right: -142px;
-              position: absolute;
-            }
-            .home-text14 {
-              right: -213px;
-              bottom: -75px;
-            }
-            .home-container3 {
-              margin-top: var(--dl-space-space-oneandhalfunits);
-              align-items: flex-start;
-              margin-bottom: 0px;
-            }
-            .home-text18 {
-              font-size: 13px;
-              font-style: normal;
-              text-align: center;
-              font-weight: 200;
+              margin-bottom: var(--dl-space-space-unit);
             }
           }
         `}

@@ -44,11 +44,8 @@ const Navbar = (props) => {
             <Link href="/menu" id="MENU">
               <a className="navbar-link07 nav-link">MENU</a>
             </Link>
-            <Link href="/about">
-              <a className="navbar-link09 nav-link">ABOUT</a>
-            </Link>
             <Link href="/contact">
-              <a className="navbar-link11 nav-link">CONTACT</a>
+              <a className="navbar-link09 nav-link">CONTACT</a>
             </Link>
           </div>
         </div>
@@ -182,7 +179,7 @@ listenForUrlChangesMobileMenu()
             justify-content: flex-start;
           }
           .navbar-nav-links1 {
-            gap: var(--dl-space-space-halfunit);
+            gap: var(--dl-space-space-threeunits);
             display: flex;
             max-width: 479px;
             border-color: transparent;
@@ -199,11 +196,10 @@ listenForUrlChangesMobileMenu()
             color: black;
             text-decoration: none;
           }
-          .navbar-link11 {
-            color: black;
-            text-decoration: none;
-          }
           .navbar-root-class-name {
+            width: 100%;
+          }
+          .navbar-root-class-name1 {
             width: 100%;
           }
           @media (max-width: 767px) {
@@ -212,7 +208,7 @@ listenForUrlChangesMobileMenu()
             }
             .navbar-branding-logo {
               left: -1px;
-              width: 73px;
+              width: 102px;
               bottom: 7px;
               height: 65px;
               position: absolute;
@@ -230,8 +226,10 @@ listenForUrlChangesMobileMenu()
               position: relative;
             }
             .navbar-nav-links1 {
-              left: -436px;
+              left: -344px;
+              width: 187px;
               bottom: -45px;
+              height: 24px;
               display: flex;
               position: absolute;
             }
@@ -254,6 +252,7 @@ listenForUrlChangesMobileMenu()
               width: 359px;
               bottom: -3px;
               height: 38px;
+              margin-right: 0px;
             }
             .navbar-link05 {
               font-style: normal;
@@ -264,11 +263,10 @@ listenForUrlChangesMobileMenu()
               font-weight: 300;
             }
             .navbar-link09 {
-              font-style: normal;
-              font-weight: 300;
-            }
-            .navbar-link11 {
+              top: 2px;
+              left: 168px;
               color: black;
+              position: absolute;
               font-style: normal;
               font-weight: 300;
               text-decoration: none;
