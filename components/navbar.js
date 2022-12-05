@@ -48,7 +48,7 @@ const Navbar = (props) => {
               <a className="navbar-link09 nav-link">ABOUT</a>
             </Link>
             <Link href="/contact">
-              <a className="navbar-link11 nav-link">Contact</a>
+              <a className="navbar-link11 nav-link">CONTACT</a>
             </Link>
           </div>
         </div>
@@ -182,8 +182,9 @@ listenForUrlChangesMobileMenu()
             justify-content: flex-start;
           }
           .navbar-nav-links1 {
-            gap: var(--dl-space-space-threeunits);
+            gap: var(--dl-space-space-halfunit);
             display: flex;
+            max-width: 479px;
             border-color: transparent;
           }
           .navbar-link05 {
@@ -240,19 +241,37 @@ listenForUrlChangesMobileMenu()
               padding-bottom: 6px;
             }
             .navbar-branding-logo {
-              top: 17px;
-              left: 5px;
-              width: 77px;
-              height: 52px;
+              top: 21px;
+              left: 2px;
+              width: 56px;
+              height: 41px;
             }
             .navbar-nav-content {
               height: 55px;
             }
             .navbar-nav-links1 {
-              left: -368px;
+              left: -248px;
               width: 359px;
-              bottom: -5px;
+              bottom: -3px;
               height: 38px;
+            }
+            .navbar-link05 {
+              font-style: normal;
+              font-weight: 300;
+            }
+            .navbar-link07 {
+              font-style: normal;
+              font-weight: 300;
+            }
+            .navbar-link09 {
+              font-style: normal;
+              font-weight: 300;
+            }
+            .navbar-link11 {
+              color: black;
+              font-style: normal;
+              font-weight: 300;
+              text-decoration: none;
             }
           }
         `}

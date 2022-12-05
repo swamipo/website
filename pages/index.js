@@ -16,7 +16,7 @@ const Home = (props) => {
         <Navbar rootClassName="navbar-root-class-name"></Navbar>
         <img
           alt="image"
-          src="/playground_assets/photogaphy%20workshop-1500w.png"
+          src="/playground_assets/photogaphy%20workshop-400h.png"
           className="home-image"
         />
         <img
@@ -167,6 +167,8 @@ Here's what the above is doing:
             width: 100%;
             height: 933px;
             display: flex;
+            max-width: 479px;
+            max-height: 400px;
             object-fit: cover;
           }
           .home-image1 {
@@ -246,10 +248,10 @@ Here's what the above is doing:
           .home-product-container1 {
             width: 228px;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             margin-right: 10rem;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
           }
           .home-text08 {
             font-weight: 700;
@@ -309,14 +311,6 @@ Here's what the above is doing:
             .home-footer {
               flex-direction: column;
             }
-            .home-logo {
-              position: relative;
-            }
-            .home-image3 {
-              right: -474px;
-              bottom: -175px;
-              position: absolute;
-            }
             .home-container2 {
               margin-right: var(--dl-space-space-fourunits);
             }
@@ -346,7 +340,6 @@ Here's what the above is doing:
               padding-right: var(--dl-space-space-twounits);
             }
             .home-container1 {
-              height: 259px;
               align-items: center;
               flex-direction: column;
               justify-content: space-between;
@@ -376,19 +369,18 @@ Here's what the above is doing:
           @media (max-width: 479px) {
             .home-image {
               width: 100%;
-              height: 366px;
+              height: 239px;
             }
             .home-image1 {
               width: 100%;
-              height: 366px;
+              height: 262px;
             }
             .home-image2 {
               width: 100%;
-              height: 366px;
+              height: 207px;
             }
             .home-footer {
-              width: 100%;
-              height: 349px;
+              height: 346px;
               padding: var(--dl-space-space-unit);
               margin-bottom: 0px;
               padding-bottom: 5px;
@@ -398,39 +390,44 @@ Here's what the above is doing:
               flex-direction: column;
             }
             .home-image3 {
+              width: 39px;
+              height: 25px;
               margin-bottom: 0px;
             }
             .home-links-container {
               width: 479px;
-              position: relative;
+              height: 173px;
               align-items: center;
               flex-direction: column;
             }
             .home-container2 {
-              top: 0px;
-              left: 9px;
-              width: 462px;
-              position: relative;
+              width: 287px;
+              height: 183px;
               margin-right: 0px;
             }
-            .home-text {
-              font-weight: 700;
-            }
             .home-product-container1 {
-              top: 19px;
-              left: 186px;
-              width: 134px;
-              height: 132px;
+              width: 178px;
+              height: 125px;
+              position: relative;
+            }
+            .home-text08 {
+              left: 20px;
+              bottom: 63px;
+              position: absolute;
+            }
+            .home-text09 {
+              left: -4px;
+              bottom: -46px;
               position: absolute;
             }
             .home-text13 {
-              left: -12px;
-              bottom: -62px;
+              top: 1px;
+              right: -142px;
               position: absolute;
             }
             .home-text14 {
-              left: -13px;
-              bottom: -100px;
+              right: -213px;
+              bottom: -75px;
             }
             .home-container3 {
               margin-top: var(--dl-space-space-oneandhalfunits);
@@ -438,7 +435,10 @@ Here's what the above is doing:
               margin-bottom: 0px;
             }
             .home-text18 {
+              font-size: 13px;
+              font-style: normal;
               text-align: center;
+              font-weight: 200;
             }
           }
         `}
